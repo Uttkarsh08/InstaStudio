@@ -46,10 +46,6 @@ cd InstaStudio-Android
 Open the cloned folder in Android Studio.
 Let Gradle sync and dependencies resolve.
 
-- **Run the Backend Server:**
- ```bash
-./mvnw spring-boot:run
-```
 - **Configure Firebase for Google Sign-In:**
 
 Create a Firebase project at Firebase Console.
