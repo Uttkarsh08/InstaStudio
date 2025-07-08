@@ -34,28 +34,40 @@ Custom exceptions and response wrappers for cleaner debugging, better client-sid
 
 ## 🚀 How to Get Started
 
+- **Move to the Android Repository**
+
 - **Clone the Repository:**
  ```bash
-git clone https://github.com/Uttkarsh08/InstaStudio-SpringBoot.git
-cd InstaStudio-SpringBoot
+git clone https://github.com/Uttkarsh08/InstaStudio-Android.git
+cd InstaStudio-Android
 ```
-- **Configure Database (PostgreSQL):**
+- **Open in Android Studio:**
 
-Create a PostgreSQL database.
-Add credentials in your application.yml or .env.
+Open the cloned folder in Android Studio.
+Let Gradle sync and dependencies resolve.
 
-- **Run the Backend Server:**
- ```bash
-./mvnw spring-boot:run
-```
-- **API Testing::**
+- **Configure Firebase for Google Sign-In:**
 
-Use Postman to hit endpoints for events, users, authentication, and role management.
-Authentication uses access + refresh token logic with token regeneration and expiration handling.
+Create a Firebase project at Firebase Console.
+Enable Google Sign-In in Authentication > Sign-in method.
+Download google-services.json and place it in the app/ directory.
+Sync the project.
 
+OR
+
+Contact me for google-services.json
+
+- **Build and Run:**
+
+Connect your device (recommended) or use an emulator with Android Studio.
+Run the Application
 
 ## 🧱 Tech Stack
-- **Language:** Java (Kotlin used in frontend)
+- **Language:** Kotlin(Android), Java(Backend)
+
+- **UI:** Jetpack Compose
+
+- **Auth:** Firebase Google Sign-In
 
 - **Backend Framework:** Spring Boot
 
@@ -69,7 +81,7 @@ Authentication uses access + refresh token logic with token regeneration and exp
 ## 📅 Development Timeline
 - **🧩 Backend Modules Developed:** Authentication, Role Authorization, Event & Team Management, Customer Module, Exception Handling.
 
-- **📦 Current State:** Over 20+ endpoints implemented and tested.
+- **📦 Current State:** Fully deployed and integrated.
 
-- **🎯 Target:** 100% backend readiness by May 31, 2025, followed by integration with the Android frontend.
+- **🎯 Target:** Currently working on the Android frontend, integrating it with the deployed backend to enable studio management, Google sign-in, and image handling workflows in the app.
 >>>>>>> 667653ad57018392e835cbf1e2efbd4b4c80c58d
